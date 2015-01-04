@@ -8,3 +8,4 @@ pip-log.txt
 *.so
 .env
 .virtualenv
+data/
