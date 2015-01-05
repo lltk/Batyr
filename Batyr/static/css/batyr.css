@@ -1,0 +1,97 @@
+div#batyr {
+	width: 100%;
+	text-align: center;
+}
+
+div#languages {
+	margin-top: 0.75em;
+	margin-bottom: 1em;
+}
+
+input#question, div#answer {
+
+	width: 60%;
+	height: 50px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 0em;
+	padding: 0.5em;
+	padding-left: 2.5em;
+	padding-right: 2.25em;
+	text-align: center;
+	text-shadow: 0 1px 0 #e7e7e7;
+	color: #2E2E2E;
+	background-color: #FFFFFF;
+	border: 1px solid #E6E6E6;
+	box-shadow: inset 0 0 2px rgba(255,255,255,0.5);
+	-webkit-border-radius: 20px;
+	border-radius: 3em;
+	font-family: "Times New Roman","Times", Serif;
+	font-size: 1.5em;
+	line-height: 35px;
+}
+
+div#answer {
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.correct {
+	color: white !important;
+	border-color: #71a137 !important;
+	background-color: #8bc14a !important;
+}
+
+.incorrect {
+	color: white !important;
+	border-color: #dd2231 !important;
+	background-color: #e44e5a !important;
+}
+
+img#batyr-svg {
+	height: 12em;
+	margin-top: 2em;
+	margin-bottom: 0.75em;
+	margin-right: 2.5em;
+}
+
+img#play-input {
+	float: left;
+	width: 2.5em;
+	position: relative;
+	top: 0.8em;
+	left: 21.5%;
+}
+
+img#play-answer {
+	float: left;
+	width: 2.6em;
+	position: relative;
+	top: 0.7em;
+	left: 21.5%;
+}
+
+img#tatoeba {
+	float: right;
+	width: 2em;
+	position: relative;
+	top: 0.75em;
+	right: 21.5%;
+}
+
+img.flag {
+	width: 3em;
+	-webkit-border-radius: 10px;
+	border-radius: 0.5em;
+	border: 1px solid silver;
+}
+
+div#question-block img.flag {
+	width: 2em;
+	position: relative;
+	float: right;
+	top: 1em;
+	right: 21%;
+}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+		{% block title %}
+		<title>Batyr</title>
+		{% endblock %}
+
+		{% block jsextra %}
+		<script type="text/javascript">
+			var language = "{{ language }}";
+		</script>
+		{% endblock %}
+
+		{% block extracss %}
+		<link rel="stylesheet" href="/static/css/batyr.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/static/css/shake.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="/static/css/buttons.css" type="text/css" media="screen">
+		{% endblock %}
+
+		{% block extrajs %}
+		<script type="text/javascript" src="/static/js/levenshtein.js"></script>
+		<script type="text/javascript" src="/static/js/batyr.js"></script>
+		{% endblock %}
+
+				{% block content %}
+				<div id="batyr" class="center-block">
+
+					<img id="batyr-svg" alt="Batyr" title="Batyr" src="static/images/Batyr.svg" />
+					<div id="languages">
+						<a alt="de" title="de" href="/de" ><img class="flag shake" src="static/images/de.svg" /></a>
+						<a alt="en" title="en" href="/en" ><img class="flag shake" src="static/images/en.svg" /></a>
+						<a alt="eo" title="eo" href="/eo" ><img class="flag shake" src="static/images/eo.svg" /></a>
+						<a alt="es" title="es" href="/es" ><img class="flag shake" src="static/images/es.svg" /></a>
+						<a alt="fr" title="fr" href="/fr" ><img class="flag shake" src="static/images/fr.svg" /></a>
+						<a alt="he" title="he" href="/he" ><img class="flag shake" src="static/images/he.svg" /></a>
+						<a alt="ko" title="ko" href="/ko" ><img class="flag shake" src="static/images/ko.svg" /></a>
+						<a alt="nl" title="nl" href="/nl" ><img class="flag shake" src="static/images/nl.svg" /></a>
+						<a alt="pl" title="pl" href="/pl" ><img class="flag shake" src="static/images/pl.svg" /></a>
+						<a alt="pt" title="pt" href="/pt" ><img class="flag shake" src="static/images/pt.svg" /></a>
+						<a alt="ru" title="ru" href="/ru" ><img class="flag shake" src="static/images/ru.svg" /></a>
+						<a alt="th" title="th" href="/th" ><img class="flag shake" src="static/images/th.svg" /></a>
+						<a alt="zh" title="zh" href="/zh" ><img class="flag shake" src="static/images/zh.svg" /></a>
+					</div>
+					<div id="question-block">
+						<img id="play-input" class="shake" alt="Replay" title="Replay" src="static/images/play.svg" />
+						<img class="flag" alt="{{ language }}" title="{{ language }}" src="static/images/{{ language }}.svg" />
+						<input id="question" type="text" autofocus="autofocus" />
+						<br /><br />
+						<span id="okay" onclick="okay();" type="ok" class="button blue medium">Okay</span>
+					</div>
+					<div id="answer-block" style="display: none;">
+						<img id="play-answer" class="shake" alt="Replay" title="Replay" src="static/images/play.svg" />
+						<img id="tatoeba" class="shake" alt="Tatoeba" title="Tatoeba" src="static/images/tatoeba.png" />
+						<div id="answer"></div>
+						<br />
+						<span id="next" onclick="next();" type="next" class="button blue medium">Next</span>
+					</div>
+
+				</div>
+				{% endblock %}
