@@ -1,12 +1,17 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+__author__ = 'Markus Beuckelmann'
+__author_email__ = 'email@markus-beuckelmann.de'
+__version__ = '0.1.0'
+
 from flask import Flask, jsonify, abort
 from flask import render_template
 
 import json
 import os
 from random import randint
+
 
 app = Flask(__name__)
 
