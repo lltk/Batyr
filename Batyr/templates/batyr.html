@@ -11,39 +11,39 @@
 		{% endblock %}
 
 		{% block extracss %}
-		<link rel="stylesheet" href="/static/css/batyr.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="/static/css/shake.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="/static/css/buttons.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="{{ url_for('.static', filename='css/batyr.css') }}" type="text/css" media="screen">
+		<link rel="stylesheet" href="{{ url_for('.static', filename='css/shake.css') }}" type="text/css" media="screen">
+		<link rel="stylesheet" href="{{ url_for('.static', filename='css/buttons.css') }}" type="text/css" media="screen">
 		{% endblock %}
 
 		{% block extrajs %}
-		<script type="text/javascript" src="/static/js/levenshtein.js"></script>
-		<script type="text/javascript" src="/static/js/batyr.js"></script>
+		<script type="text/javascript" src="{{ url_for('.static', filename='js/levenshtein.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('.static', filename='js/batyr.js') }}"></script>
 		{% endblock %}
 
 				{% block content %}
 				<div id="batyr" class="center-block">
 
-					<img id="batyr-svg" alt="Batyr" title="Batyr" src="static/images/Batyr.svg" />
+					<img id="batyr-svg" alt="Batyr" title="Batyr" src="{{ url_for('.static', filename='images/Batyr.svg') }}" />
 					<div id="languages">
-						<a alt="de" title="de" href="/de" ><img class="flag shake" src="static/images/de.svg" /></a>
-						<a alt="en" title="en" href="/en" ><img class="flag shake" src="static/images/en.svg" /></a>
-						<a alt="eo" title="eo" href="/eo" ><img class="flag shake" src="static/images/eo.svg" /></a>
-						<a alt="es" title="es" href="/es" ><img class="flag shake" src="static/images/es.svg" /></a>
-						<a alt="fr" title="fr" href="/fr" ><img class="flag shake" src="static/images/fr.svg" /></a>
-						<a alt="he" title="he" href="/he" ><img class="flag shake" src="static/images/he.svg" /></a>
-						<a alt="ko" title="ko" href="/ko" ><img class="flag shake" src="static/images/ko.svg" /></a>
-						<a alt="nl" title="nl" href="/nl" ><img class="flag shake" src="static/images/nl.svg" /></a>
-						<a alt="pl" title="pl" href="/pl" ><img class="flag shake" src="static/images/pl.svg" /></a>
-						<a alt="pt" title="pt" href="/pt" ><img class="flag shake" src="static/images/pt.svg" /></a>
-						<a alt="ru" title="ru" href="/ru" ><img class="flag shake" src="static/images/ru.svg" /></a>
-						<a alt="th" title="th" href="/th" ><img class="flag shake" src="static/images/th.svg" /></a>
-						<a alt="zh" title="zh" href="/zh" ><img class="flag shake" src="static/images/zh.svg" /></a>
+						<a alt="de" title="de" href="{{ url_for('languages', language='de') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/de.svg') }}" /></a>
+						<a alt="en" title="en" href="{{ url_for('languages', language='en') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/en.svg') }}" /></a>
+						<a alt="eo" title="eo" href="{{ url_for('languages', language='eo') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/eo.svg') }}" /></a>
+						<a alt="es" title="es" href="{{ url_for('languages', language='es') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/es.svg') }}" /></a>
+						<a alt="fr" title="fr" href="{{ url_for('languages', language='fr') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/fr.svg') }}" /></a>
+						<a alt="he" title="he" href="{{ url_for('languages', language='he') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/he.svg') }}" /></a>
+						<a alt="ko" title="ko" href="{{ url_for('languages', language='ko') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/ko.svg') }}" /></a>
+						<a alt="nl" title="nl" href="{{ url_for('languages', language='nl') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/nl.svg') }}" /></a>
+						<a alt="pl" title="pl" href="{{ url_for('languages', language='pl') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/pl.svg') }}" /></a>
+						<a alt="pt" title="pt" href="{{ url_for('languages', language='pt') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/pt.svg') }}" /></a>
+						<a alt="ru" title="ru" href="{{ url_for('languages', language='ru') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/ru.svg') }}" /></a>
+						<a alt="th" title="th" href="{{ url_for('languages', language='th') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/th.svg') }}" /></a>
+						<a alt="zh" title="zh" href="{{ url_for('languages', language='zh') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/zh.svg') }}" /></a>
 					</div>
 					<div id="question-block">
 						<div style="position: relative;">
-							<img id="play-input" class="shake" alt="Replay" title="Replay" src="static/images/play.svg" />
-							<img class="flag" alt="{{ language }}" title="{{ language }}" src="static/images/{{ language }}.svg" />
+							<img id="play-input" class="shake" alt="Replay" title="Replay" src="{{ url_for('.static', filename='images/play.svg') }}" />
+							<img class="flag" alt="{{ language }}" title="{{ language }}" src="{{ url_for('.static', filename='images/%s.svg' % (language,)) }}" />
 							<input id="question" type="text" autofocus="autofocus" />
 						</div>
 						<br />
@@ -51,8 +51,8 @@
 					</div>
 					<div id="answer-block" style="display: none;">
 						<div style="position: relative;">
-							<img id="play-answer" class="shake" alt="Replay" title="Replay" src="static/images/play.svg" />
-							<img id="tatoeba" class="shake" alt="Tatoeba" title="Tatoeba" src="static/images/tatoeba.png" />
+							<img id="play-answer" class="shake" alt="Replay" title="Replay" src="{{ url_for('.static', filename='images/play.svg') }}" />
+							<img id="tatoeba" class="shake" alt="Tatoeba" title="Tatoeba" src="{{ url_for('.static', filename='images/tatoeba.png') }}" />
 							<div id="answer"></div>
 						</div>
 						<br />
