@@ -17,7 +17,7 @@ function init() {
 };
 
 function next() {
-	$.getJSON('/items/random/' + language, function(data) {
+	$.getJSON(urlprefix + 'items/random/' + language, function(data) {
 		item = data;
 		play(language);
 		$('input#question').val('');
