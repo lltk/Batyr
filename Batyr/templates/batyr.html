@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+		{% block favicon %}
+		<link rel="shortcut icon" href="{{ url_for('.static', filename='images/favicon.ico') }}" type="image/x-icon" />
+		{% endblock %}
+
 		{% block title %}
 		<title>Batyr</title>
 		{% endblock %}
