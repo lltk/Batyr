@@ -41,16 +41,20 @@
 						<a alt="zh" title="zh" href="/zh" ><img class="flag shake" src="static/images/zh.svg" /></a>
 					</div>
 					<div id="question-block">
-						<img id="play-input" class="shake" alt="Replay" title="Replay" src="static/images/play.svg" />
-						<img class="flag" alt="{{ language }}" title="{{ language }}" src="static/images/{{ language }}.svg" />
-						<input id="question" type="text" autofocus="autofocus" />
-						<br /><br />
+						<div style="position: relative;">
+							<img id="play-input" class="shake" alt="Replay" title="Replay" src="static/images/play.svg" />
+							<img class="flag" alt="{{ language }}" title="{{ language }}" src="static/images/{{ language }}.svg" />
+							<input id="question" type="text" autofocus="autofocus" />
+						</div>
+						<br />
 						<span id="okay" onclick="okay();" type="ok" class="button blue medium">Okay</span>
 					</div>
 					<div id="answer-block" style="display: none;">
-						<img id="play-answer" class="shake" alt="Replay" title="Replay" src="static/images/play.svg" />
-						<img id="tatoeba" class="shake" alt="Tatoeba" title="Tatoeba" src="static/images/tatoeba.png" />
-						<div id="answer"></div>
+						<div style="position: relative;">
+							<img id="play-answer" class="shake" alt="Replay" title="Replay" src="static/images/play.svg" />
+							<img id="tatoeba" class="shake" alt="Tatoeba" title="Tatoeba" src="static/images/tatoeba.png" />
+							<div id="answer"></div>
+						</div>
 						<br />
 						<span id="next" onclick="next();" type="next" class="button blue medium">Next</span>
 					</div>

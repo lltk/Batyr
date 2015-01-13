@@ -11,13 +11,11 @@ div#languages {
 input#question, div#answer {
 
 	width: 60%;
-	height: 50px;
-	margin-left: 15%;
-	margin-right: 15%;
+	height: 2.4em;
 	margin-bottom: 0em;
 	padding: 0.5em;
 	padding-left: 2.5em;
-	padding-right: 2.25em;
+	padding-right: 2.5em;
 	text-align: center;
 	text-shadow: 0 1px 0 #e7e7e7;
 	color: #2E2E2E;
@@ -32,6 +30,8 @@ input#question, div#answer {
 }
 
 div#answer {
+	height: auto;
+	min-height:2.4em;
 	margin-left: 20%;
 	margin-right: 20%;
 	padding-top: 0.25em;
@@ -58,26 +58,23 @@ img#batyr-svg {
 }
 
 img#play-input {
-	float: left;
-	width: 2.5em;
-	position: relative;
+	width: 2em;
+	position: absolute;
 	top: 0.8em;
 	left: 21.5%;
 }
 
 img#play-answer {
-	float: left;
-	width: 2.6em;
-	position: relative;
-	top: 0.7em;
+	width: 2em;
+	position: absolute;
+	top: 23%;
 	left: 21.5%;
 }
 
 img#tatoeba {
-	float: right;
 	width: 2em;
-	position: relative;
-	top: 0.75em;
+	position: absolute;
+	top: 23%;
 	right: 21.5%;
 }
 
@@ -90,8 +87,7 @@ img.flag {
 
 div#question-block img.flag {
 	width: 2em;
-	position: relative;
-	float: right;
-	top: 1em;
-	right: 21%;
+	position: absolute;
+	top: 30%;
+	right: 21.5%;
 }
