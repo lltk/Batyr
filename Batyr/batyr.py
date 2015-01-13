@@ -5,7 +5,7 @@ __author__ = 'Markus Beuckelmann'
 __author_email__ = 'email@markus-beuckelmann.de'
 __version__ = '0.1.0'
 
-from flask import Flask, jsonify, abort
+from flask import Flask, jsonify, abort, redirect, url_for
 from flask import render_template
 
 import json
@@ -27,6 +27,10 @@ def load():
 		if f.endswith('.json'):
 			language = f.replace('.json', '')
 			data[language] = json.load(open('/'.join([path, f]), 'r'))
+
+@app.route('/')
+def index():
+	return redirect(url_for('languages', language = 'en'))
 
 @app.route('/<language>', methods = ['GET'])
 def languages(language):
