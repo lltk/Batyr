@@ -1,5 +1,6 @@
 div#batyr {
 	width: 100%;
+	padding: 1em;
 	text-align: center;
 }
 
@@ -50,11 +51,11 @@ div#answer {
 	background-color: #e44e5a !important;
 }
 
-img#batyr-svg {
-	height: 12em;
-	margin-top: 2em;
-	margin-bottom: 0.75em;
-	margin-right: 2.5em;
+div#batyr-svg {
+	width: 18em;
+	padding: 2em;
+	padding-left: 0em;
+	padding-bottom: 1em;
 }
 
 img#play-input {

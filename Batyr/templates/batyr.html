@@ -16,9 +16,9 @@
 		{% endblock %}
 
 		{% block extracss %}
-		<link rel="stylesheet" href="{{ url_for('.static', filename='css/batyr.css') }}" type="text/css" media="screen">
-		<link rel="stylesheet" href="{{ url_for('.static', filename='css/shake.css') }}" type="text/css" media="screen">
-		<link rel="stylesheet" href="{{ url_for('.static', filename='css/buttons.css') }}" type="text/css" media="screen">
+		<link rel="stylesheet" href="{{ url_for('.static', filename='css/batyr.css') }}" type="text/css">
+		<link rel="stylesheet" href="{{ url_for('.static', filename='css/shake.css') }}" type="text/css">
+		<link rel="stylesheet" href="{{ url_for('.static', filename='css/buttons.css') }}" type="text/css">
 		{% endblock %}
 
 		{% block extrajs %}
@@ -29,7 +29,10 @@
 				{% block content %}
 				<div id="batyr" class="center-block">
 
-					<img id="batyr-svg" alt="Batyr" title="Batyr" src="{{ url_for('.static', filename='images/Batyr.svg') }}" />
+					<div id="batyr-svg" class="center-block">
+						<img class="img-responsive" alt="Batyr" title="Batyr" src="{{ url_for('.static', filename='images/Batyr.svg') }}" />
+					</div>
+
 					<div id="languages">
 						<a alt="de" title="de" href="{{ url_for('languages', language='de') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/de.svg') }}" /></a>
 						<a alt="en" title="en" href="{{ url_for('languages', language='en') }}" ><img class="flag shake" src="{{ url_for('.static', filename='images/en.svg') }}" /></a>
