@@ -1,19 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 13.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="62.996px" height="62.996px" viewBox="0 0 62.996 62.996" enable-background="new 0 0 62.996 62.996" xml:space="preserve">
 
-<g>
-	<title>Canvas 7</title>
-	<g>
-		<title>Layer 1</title>
-<path fill="none" stroke="#32343A" stroke-width="3.725" stroke-linecap="round" stroke-linejoin="round" d="M38.742,8.19
-	c8.437,8.437,8.437,22.114,0,30.552c-8.438,8.436-22.116,8.436-30.552,0c-8.437-8.438-8.437-22.115,0-30.552
-	C16.626-0.247,30.305-0.247,38.742,8.19"/>
-<path fill="#32343A" d="M17.269,13.269l16.265,9.833l-16.265,9.833V13.269z"/>
-<path fill="none" stroke="#4D4D4D" stroke-width="0.745" stroke-linecap="round" stroke-linejoin="round" d="M17.269,13.269
-	l16.265,9.833l-16.265,9.833V13.269z"/>
-	</g>
-</g>
-</svg>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="62.996px"
+   height="62.996px"
+   viewBox="0 0 62.996 62.996"
+   enable-background="new 0 0 62.996 62.996"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="play.svg"><metadata
+     id="metadata21"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs19" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     id="namedview17"
+     showgrid="false"
+     inkscape:zoom="7.4925394"
+     inkscape:cx="53.524999"
+     inkscape:cy="24.653172"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><g
+     id="g3"
+     transform="matrix(1.3063992,0,0,1.3063992,0.8320307,0.81812606)"><title
+       id="title5">Canvas 7</title><g
+       id="g7"><title
+         id="title9">Layer 1</title><path
+         d="m 38.742,8.19 c 8.437,8.437 8.437,22.114 0,30.552 -8.438,8.436 -22.116,8.436 -30.552,0 -8.437,-8.438 -8.437,-22.115 0,-30.552 8.436,-8.437 22.115,-8.437 30.552,0"
+         id="path11"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#32343a;stroke-width:3.7249999;stroke-linecap:round;stroke-linejoin:round" /><path
+         d="m 17.269,13.269 16.265,9.833 -16.265,9.833 V 13.269 z"
+         id="path13"
+         inkscape:connector-curvature="0"
+         style="fill:#32343a" /><path
+         d="m 17.269,13.269 16.265,9.833 -16.265,9.833 V 13.269 z"
+         id="path15"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#4d4d4d;stroke-width:0.745;stroke-linecap:round;stroke-linejoin:round" /></g></g></svg>
